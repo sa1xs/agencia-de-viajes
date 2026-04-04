@@ -4,100 +4,138 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agencia de viajes</title>
-        <link rel="stylesheet" href="tarea2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="tarea2.css">
     </head>
     <body>
         <header>
-            <div>
-                <img src="Recursos/logo.png" alt="Logo">
-                <h1>Agencia de viajes</h1>
-                <p>Explora los destinos más increíbles del mundo con nuestra agencia de viajes</p>
+            <div class="container-header">
+
+                <div class="logo">
+                    <img src="Recursos/logo.png" alt="Logo">
+                </div>
+
+                <div class="container-title">
+                    <h1>Agencia de viajes</h1>
+                    <p>Explora los destinos más increíbles del mundo con nuestra agencia de viajes</p>
+                </div>
+
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Destinos</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            
         </header>
 
         <main>
-            <div>
+
+            <div class="banner">
                 <img src="Recursos/playa.jfif" alt="Playa">
-                <p>Descubre destinos inolvidables para tu próxima aventura</p>
-            </div>
-            <button>Contactanos</button>
-            <div>
-                <h1>Destinos</h1>
-                <div>
-                    <img src="Recursos/cancun.jpg" alt="Cancún">
-                    <p>Cancún, México</p>
-                    <p>Playas de arena blanca, mar turquesa y resorts ideales para unas vacaciones de descanso y diversión.</p>
-                </div>
-                <div>
-                    <img src="Recursos/machupicchu.jpg" alt="Machu Picchu">
-                    <p>Machu Picchu, Perú</p>
-                    <p>Un destino histórico rodeado de montañas impresionantes, perfecto para vivir aventura, cultura y paisajes únicos.</p>
-                </div>
-                <div>
-                    <img src="Recursos/paris.jpg" alt="París">
-                    <p>París, Francia</p>
-                    <p>Una ciudad llena de arte, historia y encanto, ideal para disfrutar monumentos icónicos y una experiencia inolvidable.</p>
-                </div>
-                <div>
-                    <img src="Recursos/tokio.jpg" alt="Tokio">
-                    <p>Tokio, Japón</p>
-                    <p>Una mezcla fascinante de tradición y modernidad, con tecnología, cultura, gastronomía y lugares sorprendentes.</p>
+                <div class="container-banner">
+                    <p>Descubre destinos inolvidables para tu próxima aventura</p>
                 </div>
             </div>
-            <div>
-                <h1>Ofertas</h1>
-                <div>
-                    <img src="Recursos/f1.jpg" alt="Fórmula 1">
-                    <p>Experiencia Fórmula 1
-                        Vive la emoción de la velocidad con un paquete especial para disfrutar de un fin de semana lleno de adrenalina, ambiente deportivo y experiencias inolvidables.
-                        Desde $1,499
-                        Incluye: hospedaje, traslado, entrada al evento y desayuno.</p>
+
+            <div class="contactanos-contenedor">
+                <button class="btn-contacto">Contactanos</button>
+            </div>
+
+            <div class="seccion-destinos">
+                <h1 class="titulo-seccion">Destinos</h1>
+                <div class="grid-destinos">
+                    <div class="tarjeta-destino">
+                        <img src="Recursos/cancun.jpg" alt="Cancún">
+                        <h3>Cancún, México</h3>
+                        <p>Playas de arena blanca, mar turquesa y resorts ideales para unas vacaciones de descanso y diversión.</p>
+                    </div>
+                    <div class="tarjeta-destino">
+                        <img src="Recursos/machupicchu.jpg" alt="Machu Picchu">
+                        <h3>Machu Picchu, Perú</h3>
+                        <p>Un destino histórico rodeado de montañas impresionantes, perfecto para vivir aventura, cultura y paisajes únicos.</p>
+                    </div>
+                    <div class="tarjeta-destino">
+                        <img src="Recursos/paris.jpg" alt="París">
+                        <h3>París, Francia</h3>
+                        <p>Una ciudad llena de arte, historia y encanto, ideal para disfrutar monumentos icónicos y una experiencia inolvidable.</p>
+                    </div>
+                    <div class="tarjeta-destino">
+                        <img src="Recursos/tokio.jpg" alt="Tokio">
+                        <h3>Tokio, Japón</h3>
+                        <p>Una mezcla fascinante de tradición y modernidad, con tecnología, cultura, gastronomía y lugares sorprendentes.</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="Recursos/pingüinos.webp" alt="Pingüinos">
-                    <p>Aventura entre glaciares y pingüinos
-                        Descubre paisajes impresionantes rodeados de hielo, naturaleza extrema y colonias de pingüinos en una experiencia única al sur del mundo.
-                        Desde $1,899
-                        Incluye: hospedaje, excursión guiada, transporte local y desayuno.</p>
+            </div>
+
+            <div class="seccion-ofertas">
+                <h1 class="titulo-seccion">Ofertas</h1>
+                <div class="contenedor-ofertas">
+                    <div class="oferta-fila">
+                        <img src="Recursos/f1.jpg" alt="Fórmula 1">
+                        <div class="oferta-texto">
+                            <h3>Experiencia Fórmula 1</h3>
+                            <p>Vive la emoción de la velocidad con un paquete especial para disfrutar de un fin de semana lleno de adrenalina, ambiente deportivo y experiencias inolvidables.</p>
+                            <p class="precio">Desde $1,499</p>
+                            <p class="incluye">Incluye: hospedaje, traslado, entrada al evento y desayuno.</p>
+                        </div>
+                    </div>
+                    <div class="oferta-fila reversada">
+                        <img src="Recursos/pingüinos.webp" alt="Pingüinos">
+                        <div class="oferta-texto">
+                            <h3>Aventura entre glaciares y pingüinos</h3>
+                            <p>Descubre paisajes impresionantes rodeados de hielo, naturaleza extrema y colonias de pingüinos en una experiencia única al sur del mundo.</p>
+                            <p class="precio">Desde $1,899</p>
+                            <p class="incluye">Incluye: hospedaje, excursión guiada, transporte local y desayuno.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
 
         <footer>
-            <div>
-                <img src="Recursos/logo.png" alt="Logo">
-            </div>
-            <div>
-                <nav>
+            <div class="container-footer">
+
+                <div class="logo2">
+                    <img src="Recursos/logo.png" alt="Logo">
+                </div>
+
+                <nav class="container-nav">
                     <ul>
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Destinos</a></li>
                         <li><a href="#">Ofertas</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div>
-                <p>VISITA NUESTRAS REDES SOCIALES!</p>
-                <div>
-                    <a href="https://www.instagram.com/?hl=es">Instagram<i class="bx bxl-instagram"></i></a>
-                    <a href="https://www.facebook.com/">Facebook<i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.youtube.com">Youtube<i class="bx bxl-youtube"></i></a>
+                </nav> 
+
+                <div class="container-contacto">
+                    <p class="titulo-contacto">Contáctanos</p>
+                    <p>+506 8843 4578</p>
+                    <p>agenciadeviajes@gmail.com</p>
                 </div>
-            </div>
+
+                <div class="container-redes">
+                    <p>VISITA NUESTRAS REDES SOCIALES!</p>
+                    <div class="redes">
+                        <a href="https://www.instagram.com/?hl=es"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.youtube.com"><i class="bx bxl-youtube"></i></a>
+                    </div>
+                </div>
+            </div>  
+
             <hr>
-            <p>Todos los derechos reservados. 2026 ©Agencia de viajes</p>
+            <div class="container-derechos">
+                <p>Todos los derechos reservados. 2026 ©Agencia de viajes</p>
+            </div>
         </footer>
         
     </body>
