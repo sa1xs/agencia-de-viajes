@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="tarea2.css">
+        <link rel="icon" href="Recursos/icon.png">
     </head>
     <body>
         <header>
-            <div class="container-header">
+            <div class="container-header" id="inicio">
 
                 <div class="logo">
                     <img src="Recursos/logo.png" alt="Logo">
@@ -27,10 +28,10 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             
@@ -46,10 +47,10 @@
             </div>
 
             <div class="contactanos-contenedor">
-                <button class="btn-contacto">Contactanos</button>
+                <a class="btn-contacto" href="#contacto">Contactanos</a>
             </div>
 
-            <div class="seccion-destinos">
+            <div class="seccion-destinos" id="destinos">
                 <h1 class="titulo-seccion">Destinos</h1>
                 <div class="grid-destinos">
                     <div class="tarjeta-destino">
@@ -75,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="seccion-ofertas">
+            <div class="seccion-ofertas" id="ofertas">
                 <h1 class="titulo-seccion">Ofertas</h1>
                 <div class="contenedor-ofertas">
                     <div class="oferta-fila">
@@ -101,7 +102,7 @@
         </main>
 
         <footer>
-            <div class="container-footer">
+            <div class="container-footer" id="contacto">
 
                 <div class="logo2">
                     <img src="Recursos/logo.png" alt="Logo">
@@ -109,10 +110,10 @@
 
                 <nav class="container-nav">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Destinos</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav> 
 

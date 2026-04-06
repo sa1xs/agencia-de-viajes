@@ -1,10 +1,15 @@
 /* --- GLOBALS --- */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: #4A5568;
     background-color: #F8F9FA;
+    overflow-x: hidden;
 }
 
 /* --- HEADER --- */
@@ -13,7 +18,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 0px 30px;
     margin-bottom: 40px;
 }
 
@@ -54,7 +58,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    padding-right: 30px;
+    padding-right: 100px;
 }
 
 nav ul {
@@ -130,6 +134,7 @@ main {
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .btn-contacto:hover {
@@ -140,7 +145,7 @@ main {
 .seccion-destinos,
 .seccion-ofertas {
     padding: 0 50px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .titulo-seccion {
@@ -206,6 +211,7 @@ main {
 }
 
 .oferta-fila img {
+    object-fit: cover;
     width: 40%;
 }
 
@@ -350,4 +356,86 @@ hr {
     color: #64748B;
     letter-spacing: 0.5px;
     padding-bottom: 20px;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .container-title {
+        padding-right: 20px;
+    }
+
+    nav {
+        padding-right: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .container-banner {
+        width: 50%;
+    }
+
+    .container-banner p {
+        font-size: 1.3rem;
+    }
+
+    .btn-contacto {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    .grid-destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .oferta-fila {
+        height: auto;
+    }
+
+    .oferta-texto {
+        padding: 30px;
+    }
+
+    .container-contacto {
+        padding-left: 20px;
+    }
+
+    hr {
+        margin: 0px 60px 20px 60px;
+    }
+}
+
+/* Celular */
+@media (max-width: 828px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-footer {
+        gap: 0;
+        text-align: center;
+    }
+
+    .container-nav {
+        padding-left: 40px;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+
 }
