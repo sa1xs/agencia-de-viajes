@@ -24,3 +24,9 @@ El objetivo principal fue aplicar conceptos de maquetación web, estilos visuale
 
 - HTML5
 - CSS3
+
+## Cómo usar
+
+1. Clonar el repositorio o descargar los archivos
+2. Abrir `index.html` en cualquier navegador
+3. No requiere instalación ni dependencias
